@@ -1,0 +1,36 @@
+{
+	"tasks": [
+		{
+			"label": "Clean",
+			"type": "shell",
+			"command": "rm -rf build/ && mkdir build",
+			"args": [],
+			"options": {
+				"cwd": "${cwd}"
+			},
+			"problemMatcher": ["$gcc"],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "Clean task."
+		},
+		{
+			"label": "Build",
+			"type": "shell",
+			"command": "g++ Quantum.cxx -o build/Quantum.out",
+			"args": [],
+			"options": {
+				"cwd": "${cwd}"
+			},
+			"problemMatcher": ["$gcc"],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "Build task.",
+			"dependsOn": ["Clean"]
+		}
+	],
+	"version": "2.0.0"
+}
