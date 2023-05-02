@@ -1,0 +1,7 @@
+# Qua metti tutti i file e cartelle che vuoi escludere dalla repository su GitHub
+# (es. file di build, file temporanei, file di configurazione con password, ecc...)
+# NOTA: se vuoi escludere una cartella, devi includere anche il suo percorso
+# (es. /home/utente/progetto/cartella_esclusa)
+
+# File di build
+build/
